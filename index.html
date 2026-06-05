@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Saad Stores</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="menu-btn">
+<i class="fas fa-bars"></i>
+</div>
+
+<div class="logo">
+
+<img src="logo.png" alt="Logo">
+
+<div class="logo-text">
+
+<h2>SAAD STORES</h2>
+
+<p>ملابس لكل العائلة</p>
+
+</div>
+
+</div>
+
+<nav class="nav-links" id="mobileMenu">
+
+<a href="#">الرئيسية</a>
+
+<a href="#">المنتجات</a>
+
+<a href="#">الأقسام</a>
+
+<a href="#">من نحن</a>
+
+<a href="#">تواصل معنا</a>
+
+</nav>
+
+<div class="header-icons">
+
+<div class="search-icon">
+<i class="fas fa-search"></i>
+</div>
+
+<div class="cart-icon">
+
+<i class="fas fa-shopping-cart"></i>
+
+<span>0</span>
+
+</div>
+
+</div>
+
+</header>
+
+<section class="banner">
+
+<img src="banner1.png" alt="Banner">
+
+</section>
+
+<section class="sections">
+
+<h2>الأقسام</h2>
+
+<div id="categories-container"></div>
+
+</section>
+
+<section class="products">
+
+<h2>منتجات مميزة</h2>
+
+<div id="products-container"></div>
+
+</section>
+
+<footer class="footer">
+
+<h3>SAAD STORES</h3>
+
+<p>ملابس لكل العائلة</p>
+
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+const menuBtn =
+document.querySelector(".menu-btn");
+
+const mobileMenu =
+document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click",()=>{
+
+if(
+mobileMenu.style.display === "flex"
+){
+mobileMenu.style.display = "none";
+}else{
+mobileMenu.style.display = "flex";
+}
+
+});
+
+</script>
+
+</body>
+</html>
