@@ -259,9 +259,9 @@ overflow:hidden;
 
 .footer-top{
 display:flex;
-justify-content:space-between;
+justify-content:center;
 align-items:center;
-gap:40px;
+gap:25px;
 direction:ltr;
 }
 
@@ -300,7 +300,6 @@ opacity:.85;
 
 .footer-center{
 text-align:center;
-flex:1;
 }
 
 .footer-center h3{
