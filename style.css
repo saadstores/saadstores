@@ -287,7 +287,7 @@ font-size:28px;
 .footer-phone a{
 color:#fff;
 text-decoration:none;
-font-size:22px;
+font-size:13px;
 font-weight:700;
 display:block;
 }
@@ -380,17 +380,16 @@ border-radius:30px;
 display:flex;
 justify-content:center;
 align-items:center;
-gap:10px;
-padding:0 8px;
+gap:8px;
+padding:0;
 }
 
 .footer-logo img{
-width:70px;
-margin-right:0;
+width:55px;
 }
 
 .footer-center h3{
-font-size:22px;
+font-size:18px;
 white-space:nowrap;
 }
 
@@ -418,6 +417,10 @@ border-left:none;
 
 .footer-phone p{
 font-size:10px;
+}
+
+.footer-phone a{
+font-size:11px;
 }
 
 .footer-copy{
