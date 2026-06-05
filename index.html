@@ -43,9 +43,9 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 
 <a href="#">الرئيسية</a>
 
-<a href="#">المنتجات</a>
-
 <a href="#">الأقسام</a>
+
+<a href="#">المنتجات</a>
 
 <a href="#">من نحن</a>
 
@@ -104,25 +104,28 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 <script src="script.js"></script>
 
 <script>
+const menuBtn = document.querySelector(".menu-btn");
+const mobileMenu = document.getElementById("mobileMenu");
 
-const menuBtn =
-document.querySelector(".menu-btn");
+menuBtn.addEventListener("click", (e) => {
+e.stopPropagation();
 
-const mobileMenu =
-document.getElementById("mobileMenu");
-
-menuBtn.addEventListener("click",()=>{
-
-if(
-mobileMenu.style.display === "flex"
-){
+if (mobileMenu.style.display === "flex") {
 mobileMenu.style.display = "none";
-}else{
+} else {
 mobileMenu.style.display = "flex";
 }
-
 });
 
+mobileMenu.addEventListener("click", (e) => {
+e.stopPropagation();
+});
+
+document.addEventListener("click", () => {
+if (window.innerWidth <= 768) {
+mobileMenu.style.display = "none";
+}
+});
 </script>
 
 </body>
