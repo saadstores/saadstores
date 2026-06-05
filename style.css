@@ -175,9 +175,7 @@ padding:12px;
 display:block;
 }
 
-.nav-links{
-display:none;
-}
+
 
 .logo{
 gap:2px;
@@ -229,4 +227,8 @@ box-shadow:0 10px 25px rgba(0,0,0,.15);
 z-index:999;
 }
 
+}
+
+html{
+scroll-behavior:smooth;
 }
